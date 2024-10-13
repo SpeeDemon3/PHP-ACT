@@ -13,7 +13,7 @@
         $name = $_POST['name'];
         $age = (int) $_POST['age'];
 
-        echo "<h4>Hi $name:</h4>";
+        echo "<h4>Hi" . $name . ":</h4>";
 
         if (isset($name) && !empty($name)) {
             if (isset($age) && !empty($age) && is_numeric($age)) {
