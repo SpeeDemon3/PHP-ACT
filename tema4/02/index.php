@@ -8,8 +8,15 @@
 <body>
     <?php
         include("car.php");
-    
-        $car1 = new Car(5, "2.0", "white", "Seat", "Leon", "gasoline");
+        include_once("vehicle.php");
+
+
+        echo Car::getWheels();
+        echo "<br>";
+        $vehicle1 = new Vehicle("Audi", "TT", "225CV");
+        echo $vehicle1;
+        echo "<br>";
+        $car1 = new Car("Tesla", "Model 3", 224, 3, "electric", "black", "electricity");
         echo $car1;
     
     ?>
