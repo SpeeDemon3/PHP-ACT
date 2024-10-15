@@ -16,7 +16,7 @@
             echo "<h2>Welcome $name</h2>";
         } else {
             echo "You should introduce your name before.";
-            header("refresh:3; Location:../index.php");
+            header("Location:../index.php");
             exit();
         }
     ?>
